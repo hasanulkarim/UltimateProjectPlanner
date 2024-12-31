@@ -144,7 +144,7 @@ export const useStore = create<Store>((set, get) => ({
     }),
 
   startTimer: (taskId, continuePastTarget = false) => {
-    const state = get();
+    const state = get()
     const task = state.tasks.find((t) => t.id === taskId);
     if (task) {
       const newTimer = {
@@ -152,7 +152,7 @@ export const useStore = create<Store>((set, get) => ({
         isRunning: true,
         elapsedTime: state.timer.taskId === taskId ? state.timer.elapsedTime : task.timeSpent,
         snoozeUntil: null,
-        continuedPastTarget,
+        continuedPastTarget: continuePastTarget,
       };
       saveToLocalStorage('timer', newTimer);
       if (state.userId) {
