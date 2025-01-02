@@ -1,6 +1,6 @@
 // Google Calendar API configuration
-const GOOGLE_API_KEY = 'AIzaSyCBEwTInNY_QyIfX7wnNMxJWcrTS1gF4J4';
-const GOOGLE_CLIENT_ID = '99415995406-njklgnlofqjujthn6qhaq4ehhvm2dqc8.apps.googleusercontent.com';
+const GOOGLE_API_KEY = <Add your API KEY>;
+const GOOGLE_CLIENT_ID = <Use your client id>;
 const DISCOVERY_DOC = 'https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest';
 const SCOPES = 'https://www.googleapis.com/auth/calendar.events';
 
